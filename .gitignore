@@ -1,0 +1,73 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---- Packaging / builds ----
+build/
+dist/
+sdist/
+wheels/
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+MANIFEST
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Testing / coverage / type-checkers ----
+.pytest_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# ---- immaster runtime / robot artifacts ----
+# BLE packet captures used for reverse engineering
+*.btsnoop
+btsnoop_hci.log*
+# Frames saved by the camera / vision helpers
+vision_test.jpg
+*.jpg.tmp
+# Local speech-to-text / model assets pulled onto the Pi (not vendored)
+models/
+*.hef
+# Ad-hoc logs
+*.log
+logs/
+
+# ---- Secrets / local config ----
+# IPCAM_URL often carries a phone-cam user:pass — keep local env files out of git
+.env
+.env.*
+*.local
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+build/*
+build/
+setup.py

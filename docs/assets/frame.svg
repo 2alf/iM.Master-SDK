@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1120 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="frTitle frDesc" font-family="'Segoe UI',system-ui,-apple-system,sans-serif">
+  <title id="frTitle">The iM.Master drive frame</title>
+  <desc id="frDesc">A 14-byte BLE manufacturer-advertising payload. Byte 7 is the motor command byte, byte 10 mirrors it, byte 11 is its popcount checksum, wrapped by a fixed header and trailer.</desc>
+  <defs>
+    <marker id="fTip" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#a89f96"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1120" height="470" rx="16" fill="#1b1b1b"/>
+
+  <text x="44" y="46" fill="#f2ede7" font-size="23" font-weight="600">The drive frame: 14 bytes, fully decoded</text>
+  <text x="44" y="70" fill="#a89f96" font-size="13.5">BLE manufacturer advertising · company <tspan fill="#f7801e" font-family="monospace">0x53A6</tspan> · streamed continuously (the wheels turn only while packets flow)</text>
+
+  <!-- ===== byte row ===== -->
+  <g font-family="'SFMono-Regular',Consolas,monospace">
+    <g><rect x="46" y="96" width="68" height="62" rx="7" fill="#241a12" stroke="#f7801e" stroke-width="1.4"/><text x="80" y="118" text-anchor="middle" fill="#6f665d" font-size="10">0</text><text x="80" y="138" text-anchor="middle" fill="#e8ddd0" font-size="19">ae</text></g>
+    <g><rect x="122" y="96" width="68" height="62" rx="7" fill="#241a12" stroke="#f7801e" stroke-width="1.4"/><text x="156" y="118" text-anchor="middle" fill="#6f665d" font-size="10">1</text><text x="156" y="138" text-anchor="middle" fill="#e8ddd0" font-size="19">4a</text></g>
+    <g><rect x="198" y="96" width="68" height="62" rx="7" fill="#241a12" stroke="#f7801e" stroke-width="1.4"/><text x="232" y="118" text-anchor="middle" fill="#6f665d" font-size="10">2</text><text x="232" y="138" text-anchor="middle" fill="#e8ddd0" font-size="19">07</text></g>
+    <g><rect x="274" y="96" width="68" height="62" rx="7" fill="#2a2725" stroke="#423d39" stroke-width="1.3"/><text x="308" y="118" text-anchor="middle" fill="#6f665d" font-size="10">3</text><text x="308" y="138" text-anchor="middle" fill="#a89f96" font-size="19">00</text></g>
+    <g><rect x="350" y="96" width="68" height="62" rx="7" fill="#2a2725" stroke="#423d39" stroke-width="1.3"/><text x="384" y="118" text-anchor="middle" fill="#6f665d" font-size="10">4</text><text x="384" y="138" text-anchor="middle" fill="#a89f96" font-size="19">00</text></g>
+    <g><rect x="426" y="96" width="68" height="62" rx="7" fill="#2a2725" stroke="#423d39" stroke-width="1.3"/><text x="460" y="118" text-anchor="middle" fill="#6f665d" font-size="10">5</text><text x="460" y="138" text-anchor="middle" fill="#a89f96" font-size="19">00</text></g>
+    <g><rect x="502" y="96" width="68" height="62" rx="7" fill="#2a2725" stroke="#423d39" stroke-width="1.3"/><text x="536" y="118" text-anchor="middle" fill="#6f665d" font-size="10">6</text><text x="536" y="138" text-anchor="middle" fill="#a89f96" font-size="19">00</text></g>
+    <!-- 7 B7 motor byte (gold highlight) -->
+    <g><rect x="578" y="92" width="68" height="70" rx="7" fill="#33260f" stroke="#fba23c" stroke-width="2"/><text x="612" y="116" text-anchor="middle" fill="#fba23c" font-size="10">7</text><text x="612" y="140" text-anchor="middle" fill="#fdbf6b" font-size="20" font-weight="700">B7</text></g>
+    <g><rect x="654" y="96" width="68" height="62" rx="7" fill="#2a2725" stroke="#423d39" stroke-width="1.3"/><text x="688" y="118" text-anchor="middle" fill="#6f665d" font-size="10">8</text><text x="688" y="138" text-anchor="middle" fill="#a89f96" font-size="19">00</text></g>
+    <g><rect x="730" y="96" width="68" height="62" rx="7" fill="#2a2725" stroke="#423d39" stroke-width="1.3"/><text x="764" y="118" text-anchor="middle" fill="#6f665d" font-size="10">9</text><text x="764" y="138" text-anchor="middle" fill="#a89f96" font-size="19">00</text></g>
+    <!-- 10 copy of B7 -->
+    <g><rect x="806" y="96" width="68" height="62" rx="7" fill="#2e2113" stroke="#f7801e" stroke-width="1.4"/><text x="840" y="118" text-anchor="middle" fill="#f7801e" font-size="10">10</text><text x="840" y="138" text-anchor="middle" fill="#f7a24d" font-size="19">B7</text></g>
+    <!-- 11 checksum (deep red) -->
+    <g><rect x="882" y="96" width="68" height="62" rx="7" fill="#2e1712" stroke="#d23a16" stroke-width="2"/><text x="916" y="118" text-anchor="middle" fill="#ef6a3c" font-size="10">11</text><text x="916" y="138" text-anchor="middle" fill="#f5865a" font-size="19" font-weight="700">CK</text></g>
+    <!-- 12-13 trailer -->
+    <g><rect x="958" y="96" width="68" height="62" rx="7" fill="#241a12" stroke="#f7801e" stroke-width="1.4"/><text x="992" y="118" text-anchor="middle" fill="#6f665d" font-size="10">12</text><text x="992" y="138" text-anchor="middle" fill="#e8ddd0" font-size="19">c3</text></g>
+    <g><rect x="1034" y="96" width="68" height="62" rx="7" fill="#241a12" stroke="#f7801e" stroke-width="1.4"/><text x="1068" y="118" text-anchor="middle" fill="#6f665d" font-size="10">13</text><text x="1068" y="138" text-anchor="middle" fill="#e8ddd0" font-size="19">99</text></g>
+  </g>
+
+  <!-- group labels -->
+  <g font-size="11.5">
+    <text x="156" y="180" text-anchor="middle" fill="#f7801e">header</text>
+    <text x="422" y="180" text-anchor="middle" fill="#a89f96">fixed padding</text>
+    <text x="612" y="180" text-anchor="middle" fill="#fba23c" font-weight="600">motor byte</text>
+    <text x="840" y="180" text-anchor="middle" fill="#f7801e">copy of B7</text>
+    <text x="916" y="192" text-anchor="middle" fill="#ef6a3c">checksum</text>
+    <text x="1030" y="180" text-anchor="middle" fill="#f7801e">trailer</text>
+  </g>
+
+  <!-- connector from B7 down to breakdown -->
+  <path d="M612 162 L612 210" fill="none" stroke="#a89f96" stroke-width="1.6" marker-end="url(#fTip)"/>
+
+  <!-- ===== B7 breakdown ===== -->
+  <rect x="44" y="222" width="1032" height="216" rx="12" fill="#221f1d" stroke="#423d39" stroke-width="1.4"/>
+  <text x="70" y="252" fill="#fba23c" font-size="15" font-weight="700" font-family="monospace">B7, the motor command byte</text>
+
+  <!-- 8 bit cells -->
+  <g font-family="'SFMono-Regular',Consolas,monospace" text-anchor="middle">
+    <rect x="70" y="270" width="52" height="56" rx="6" fill="#33260f" stroke="#fba23c" stroke-width="1.6"/><text x="96" y="306" fill="#fdbf6b" font-size="22">1</text>
+    <rect x="126" y="270" width="52" height="56" rx="6" fill="#33260f" stroke="#fba23c" stroke-width="1.6"/><text x="152" y="306" fill="#fdbf6b" font-size="22">1</text>
+    <rect x="182" y="270" width="52" height="56" rx="6" fill="#33260f" stroke="#fba23c" stroke-width="1.6"/><text x="208" y="306" fill="#fdbf6b" font-size="22">0</text>
+    <rect x="238" y="270" width="52" height="56" rx="6" fill="#33260f" stroke="#fba23c" stroke-width="1.6"/><text x="264" y="306" fill="#fdbf6b" font-size="22">0</text>
+    <rect x="294" y="270" width="52" height="56" rx="6" fill="#2a1f12" stroke="#f7801e" stroke-width="1.6"/><text x="320" y="306" fill="#f7a24d" font-size="22">L</text>
+    <rect x="350" y="270" width="52" height="56" rx="6" fill="#2a1f12" stroke="#f7801e" stroke-width="1.6"/><text x="376" y="306" fill="#f7a24d" font-size="22">L</text>
+    <rect x="406" y="270" width="52" height="56" rx="6" fill="#2e1712" stroke="#d23a16" stroke-width="1.6"/><text x="432" y="306" fill="#f5865a" font-size="22">R</text>
+    <rect x="462" y="270" width="52" height="56" rx="6" fill="#2e1712" stroke="#d23a16" stroke-width="1.6"/><text x="488" y="306" fill="#f5865a" font-size="22">R</text>
+  </g>
+  <text x="208" y="350" text-anchor="middle" fill="#fba23c" font-size="12">motors enabled (0xC0)</text>
+  <text x="320" y="350" text-anchor="middle" fill="#f7a24d" font-size="12">left wheel</text>
+  <text x="432" y="350" text-anchor="middle" fill="#f5865a" font-size="12">right wheel</text>
+
+  <!-- formula + legend on the right -->
+  <line x1="556" y1="262" x2="556" y2="416" stroke="#423d39" stroke-width="1.3"/>
+  <text x="586" y="288" fill="#f2ede7" font-size="19" font-family="monospace">B7 = 0xC0 | (left&#160;&lt;&lt;&#160;2) | right</text>
+  <text x="586" y="320" fill="#a89f96" font-size="14">each wheel ∈  <tspan fill="#e8ddd0" font-family="monospace">0</tspan> stop · <tspan fill="#e8ddd0" font-family="monospace">1</tspan> forward · <tspan fill="#e8ddd0" font-family="monospace">2</tspan> reverse</text>
+  <text x="586" y="346" fill="#a89f96" font-size="14"><tspan fill="#f5865a" font-family="monospace">CK</tspan> = popcount(B7), the integrity byte (not a counter)</text>
+  <text x="586" y="372" fill="#a89f96" font-size="14">no proportional speed anywhere, just on / off / reverse</text>
+
+  <g font-family="'SFMono-Regular',Consolas,monospace" font-size="13">
+    <rect x="586" y="388" width="150" height="34" rx="7" fill="#2a2725" stroke="#423d39"/><text x="601" y="410" fill="#e8ddd0">forward → <tspan fill="#fdbf6b">c5</tspan></text>
+    <rect x="748" y="388" width="150" height="34" rx="7" fill="#2a2725" stroke="#423d39"/><text x="763" y="410" fill="#e8ddd0">spin → <tspan fill="#fdbf6b">c6</tspan></text>
+    <rect x="910" y="388" width="150" height="34" rx="7" fill="#2a2725" stroke="#423d39"/><text x="925" y="410" fill="#e8ddd0">stop → <tspan fill="#fdbf6b">c0</tspan></text>
+  </g>
+</svg>

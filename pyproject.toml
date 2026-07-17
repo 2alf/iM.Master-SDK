@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "immaster-sdk"
+version = "0.1.0"
+description = "Python SDK to drive the iM.Master BLE robot, with an optional on-device local-LLM + vision addon."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "immaster contributors" }]
+keywords = [
+    "robotics", "bluetooth", "ble", "raspberry-pi", "reverse-engineering",
+    "llm", "hailo", "edge-ai", "differential-drive",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Hardware :: Hardware Drivers",
+]
+# The core SDK (protocol + robot control) is pure Python standard library.
+dependencies = []
+
+[project.optional-dependencies]
+# Optional AI addon: phone-camera perception, YOLO drawing, and the live browser
+# view. YOLO on the Hailo NPU also needs HailoRT / hailo_platform, which ships
+# with the Hailo SDK and is installed separately (not on PyPI).
+vision = ["Pillow>=9.0", "numpy>=1.21"]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/2alf/immasterSDK"
+"Protocol write-up" = "https://github.com/2alf/immasterSDK/blob/main/docs/BLUETOOTH.md"
+"Bug Tracker" = "https://github.com/2alf/immasterSDK/issues"
+"PyPi" = "https://pypi.org/project/immaster-sdk/"
+
+[tool.setuptools]
+packages = ["immaster"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 1040 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lpTitle lpDesc" font-family="'Segoe UI',system-ui,-apple-system,sans-serif">
+  <title id="lpTitle">The see-think-act loop</title>
+  <desc id="lpDesc">One tick of the AI addon: the camera grabs a frame, the detector labels objects, the local LLM picks a move, the robot executes it, then it repeats.</desc>
+  <defs>
+    <marker id="lTip" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#f7801e"/></marker>
+    <marker id="lTipR" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#d23a16"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1040" height="380" rx="16" fill="#1b1b1b"/>
+
+  <text x="44" y="46" fill="#f2ede7" font-size="23" font-weight="600">See · think · act</text>
+  <text x="44" y="70" fill="#a89f96" font-size="13.5">One tick of the optional AI addon. Everything on-device, nothing leaves the Pi.</text>
+
+  <g>
+    <rect x="40" y="104" width="200" height="104" rx="11" fill="#2a2725" stroke="#423d39" stroke-width="1.5"/>
+    <text x="140" y="150" text-anchor="middle" fill="#f2ede7" font-size="28">👁️</text>
+    <text x="140" y="178" text-anchor="middle" fill="#f2ede7" font-size="15" font-weight="600">Camera</text>
+    <text x="140" y="197" text-anchor="middle" fill="#a89f96" font-size="12">grab a frame</text>
+
+    <rect x="306" y="104" width="200" height="104" rx="11" fill="#2a2725" stroke="#423d39" stroke-width="1.5"/>
+    <text x="406" y="150" text-anchor="middle" fill="#f2ede7" font-size="28">🔍</text>
+    <text x="406" y="178" text-anchor="middle" fill="#f2ede7" font-size="15" font-weight="600">Detector</text>
+    <text x="406" y="197" text-anchor="middle" fill="#a89f96" font-size="12">cup · right · near</text>
+
+    <rect x="572" y="104" width="200" height="104" rx="11" fill="#2a2725" stroke="#423d39" stroke-width="1.5"/>
+    <text x="672" y="150" text-anchor="middle" fill="#f2ede7" font-size="28">🧠</text>
+    <text x="672" y="178" text-anchor="middle" fill="#f2ede7" font-size="15" font-weight="600">Local LLM</text>
+    <text x="672" y="197" text-anchor="middle" fill="#fba23c" font-size="11" font-family="monospace">{"action":"veer_right"}</text>
+
+    <rect x="838" y="104" width="162" height="104" rx="11" fill="#2e2113" stroke="#f7801e" stroke-width="1.6"/>
+    <text x="919" y="150" text-anchor="middle" fill="#f2ede7" font-size="28">🤖</text>
+    <text x="919" y="178" text-anchor="middle" fill="#f2ede7" font-size="15" font-weight="600">Robot</text>
+    <text x="919" y="197" text-anchor="middle" fill="#f7801e" font-size="12">executes the move</text>
+  </g>
+
+  <line x1="240" y1="156" x2="302" y2="156" stroke="#f7801e" stroke-width="2.2" marker-end="url(#lTip)"/>
+  <line x1="506" y1="156" x2="568" y2="156" stroke="#f7801e" stroke-width="2.2" marker-end="url(#lTip)"/>
+  <line x1="772" y1="156" x2="834" y2="156" stroke="#f7801e" stroke-width="2.2" marker-end="url(#lTip)"/>
+
+  <path d="M919 208 C 919 300, 700 316, 520 316 C 340 316, 140 300, 140 210"
+        fill="none" stroke="#d23a16" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#lTipR)"/>
+  <rect x="452" y="300" width="136" height="30" rx="8" fill="#1b1b1b"/>
+  <text x="520" y="320" text-anchor="middle" fill="#a89f96" font-size="12.5">repeat every tick</text>
+</svg>
