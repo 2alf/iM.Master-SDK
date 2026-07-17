@@ -65,6 +65,9 @@ device.
   <img src="docs/assets/architecture.svg" alt="The core SDK drives the robot body from Python; the optional AI addon (camera, detector, local LLM) is a layer on top that calls the same Robot API." width="860">
 </div>
 
+
+
+
 ---
 
 ## Highlights
@@ -83,6 +86,11 @@ device.
   small interface, so you can bring Ollama or llama.cpp, a phone or a Pi Camera.
 - 💻 **Works without hardware.** `DryRobot` and `IMMASTER_DRY_RUN=1` let you run the
   whole thing, LLM loop included, on a laptop.
+
+<br>
+
+<img src="./docs/assets/free.gif"  alt="robot spinning in circles"/>
+(freed bot is a happy-spinny bot!)
 
 ---
 

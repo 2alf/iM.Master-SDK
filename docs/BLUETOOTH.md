@@ -190,3 +190,7 @@ executable spec of the frame format.
 | Proportional speed | ❌ Does not exist in protocol |
 
 The protocol is considered **fully reverse-engineered**.
+
+
+## SO ALL IN ALL THE ROBOT IS FREEEEEE!!!!!!
+<img src="./assets/free.gif"  alt="robot spinning in circles"/>
