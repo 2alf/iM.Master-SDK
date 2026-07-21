@@ -12,6 +12,8 @@ If you want, hand the wheel to a local LLM, and give it some eyes.
 [![Platform](https://img.shields.io/badge/robot%20control-Raspberry%20Pi-c51a4a.svg)](docs/BLUETOOTH.md)
 [![Protocol](https://img.shields.io/badge/BLE%20protocol-reverse%20engineered-brightgreen.svg)](docs/BLUETOOTH.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Downloads](https://static.pepy.tech/badge/immaster-sdk)](https://pepy.tech/projects/immaster-sdk)
+
 
 <img src="./docs/assets/immaster-hero.png"  alt="hero"/>
 </div>
